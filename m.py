@@ -1,4 +1,4 @@
-#script by @KaliaYtOwner
+@sharma_100
 
 import telebot
 import subprocess
@@ -8,10 +8,10 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7314107350:AAGAN6VxkntVSCK-zudoUJfstmcd3BNqVnM')
+bot = telebot.TeleBot('7492092105:AAFzd6cRO4DpDN30Du1fszBK9wDADm3NLT0')
 
 # Admin user IDs
-admin_id = ["6862918172"]
+admin_id = ["1166042039"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -48,7 +48,7 @@ allowed_user_ids = read_users()
 
 # Function to log command to the file
 def log_command(user_id, target, port, time):
-    admin_id = ["6862918172"]
+    admin_id = ["1166042039"]
     user_info = bot.get_chat(user_id)
     if user_info.username:
         username = "@" + user_info.username
@@ -153,7 +153,7 @@ def add_user(message):
         else:
             response = "Please specify a user ID and the duration (e.g., 1hour, 2days, 3weeks, 4months) to add 😘."
     else:
-        response = "You have not purchased yet purchase now from:- @KaliaYtOwner."
+        response = "You have not purchased yet purchase now from:- sharma_100."
 
     bot.reply_to(message, response)
 
@@ -189,7 +189,7 @@ def remove_user(message):
             response = '''Please Specify A User ID to Remove. 
 ✅ Usage: /remove <userid>'''
     else:
-        response = "You have not purchased yet purchase now from:- @KaliaYtOwner 🙇."
+        response = "You have not purchased yet purchase now from:- sharma_100 🙇."
 
     bot.reply_to(message, response)
 
@@ -208,7 +208,7 @@ def clear_logs_command(message):
         except FileNotFoundError:
             response = "Logs are already cleared ❌."
     else:
-        response = "You have not purchased yet purchase now from :- @KaliaYtOwner ❄."
+        response = "You have not purchased yet purchase now from :- sharma_100 ❄."
     bot.reply_to(message, response)
 
 
@@ -227,7 +227,7 @@ def clear_users_command(message):
         except FileNotFoundError:
             response = "users are already cleared ❌."
     else:
-        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @KaliaYtOwner 🙇."
+        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- sharma_100 🙇."
     bot.reply_to(message, response)
  
 
@@ -252,7 +252,7 @@ def show_all_users(message):
         except FileNotFoundError:
             response = "No data found ❌"
     else:
-        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @KaliaYtOwner ❄."
+        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- sharma_100 ❄."
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['logs'])
@@ -270,7 +270,7 @@ def show_recent_logs(message):
             response = "No data found ❌"
             bot.reply_to(message, response)
     else:
-        response = "𝙏𝙝𝙞𝙨 𝘽𝙤𝙩 𝙞𝙨 𝙤𝙣𝙡𝙮 𝙛𝙤𝙧 𝙥𝙖𝙞𝙙 𝙪𝙨𝙚𝙧𝙨 𝙗𝙪𝙮 𝙣𝙤𝙬 𝙛𝙧𝙤𝙢 - @KaliaYtOwner \n https://t.me/Kaliaytofficial/205 KALA JADU "
+        response = "𝙏𝙝𝙞𝙨 𝘽𝙤𝙩 𝙞𝙨 𝙤𝙣𝙡𝙮 𝙛𝙤𝙧 𝙥𝙖𝙞𝙙 𝙪𝙨𝙚𝙧𝙨 𝙗𝙪𝙮 𝙣𝙤𝙬 𝙛𝙧𝙤𝙢 - sharma_100 \n https://t.me/#7469313905 "
         bot.reply_to(message, response)
 
 
@@ -279,7 +279,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
     
-    response = f"{username}, 𝘼𝙩𝙩𝙖𝙘𝙠 𝙎𝙩𝙖𝙧𝙩𝙚𝙙🔥🔥\n\n𝙏𝙖𝙧𝙜𝙚𝙩: {target}\n𝙋𝙤𝙧𝙩: {port}\n𝙏𝙞𝙢𝙚: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝘽𝙮 𝙑𝙞𝙥 𝙐𝙨𝙚𝙧 𝙤𝙛- @KaliaYtOwner"
+    response = f"{username}, 𝘼𝙩𝙩𝙖𝙘𝙠 𝙎𝙩𝙖𝙧𝙩𝙚𝙙🔥🔥\n\n𝙏𝙖𝙧𝙜𝙚𝙩: {target}\n𝙋𝙤𝙧𝙩: {port}\n𝙏𝙞𝙢𝙚: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝘽𝙮 𝙑𝙞𝙥 𝙐𝙨𝙚𝙧 𝙤𝙛- sharma_100"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /bgmi command
@@ -320,7 +320,7 @@ def handle_bgmi(message):
         else:
             response = "✅ Usage :- /bgmi <target> <port> <time>"  # Updated command syntax
     else:
-        response = ("🚫 Unauthorized Access! 🚫\n\nOops! It seems like you don't have permission to use the /bgmi command. DM TO BUY ACCESS:- @KaliaYtOwner - https://t.me/Kaliaytofficial")
+        response = ("🚫 Unauthorized Access! 🚫\n\nOops! It seems like you don't have permission to use the /bgmi command. DM TO BUY ACCESS:- sharma_100 - https://t.me/Kaliaytofficial")
 
     bot.reply_to(message, response)
 
@@ -357,7 +357,7 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @KaliaYtOwner
+Buy From :- sharma_100
 Official Channel :- https://t.me/Kaliaytofficial
 '''
     for handler in bot.message_handlers:
@@ -375,7 +375,7 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''❄️𝗪𝗘𝗟𝗖𝗢𝗠𝗘 {user_name} 𝗧𝗢 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 𝗗𝗗𝗢'𝗦 𝗕𝗢𝗧 𝗧𝗛𝗜𝗦 𝗜𝗦 𝗛𝗜𝗚𝗛 𝗤𝗨𝗔𝗟𝗜𝗧𝗬 𝗦𝗘𝗥𝗩𝗘𝗥 𝗕𝗔𝗦𝗘𝗗 𝗗𝗗𝗢𝗦 𝗕𝗢𝗧 𝐚𝐭𝐭𝐚𝐜𝐤 𝐭𝐢𝐦𝐞 𝐥𝐢𝐦𝐢𝐭~ 10𝐦𝐢𝐧𝐮𝐭𝐞𝐬 .
 🤖𝗧𝗿𝘆 𝗧𝗼 𝗿𝘂𝗻 𝗧𝗵𝗶𝘀 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 : /help 
-✅BUY :- @KaliaYtOwner'''
+✅BUY :- sharma_100'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
